@@ -1,0 +1,23 @@
+:root{
+--color-purple: #B27CF0;
+--color-black: #231E1A;
+--color-yellow:#F7E864;
+--color-white: #ffffff;
+--color-blue:#12F4F8;
+--color-grey: #E2E2E2;
+--border-main: 2px solid #231E1A;
+--divider: 2px solid linear-gradient(45deg, #12F4F8, #F7E864);
+}
+
+@font-face {
+    font-family: "GentiumBookBasic";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/GentiumBookBasic-Regular.woff) format('woff');
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
