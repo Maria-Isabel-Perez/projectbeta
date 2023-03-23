@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 :root {
   --color-purple: #B27CF0;
   --color-black: #231E1A;
@@ -6,15 +11,201 @@
   --color-blue:#12F4F8;
   --color-grey: #E2E2E2;
   --border-main: 2px solid #231E1A;
-  --divider: 2px solid linear-gradient(45deg, #12F4F8, #F7E864);
 }
 
 @font-face {
-  font-family: "GentiumBookBasic";
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 700;
+  src: url(./fonts/Poppins-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Poppins-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-style: bold;
+  font-weight: 700;
+  src: url("./fonts/RobotoMono-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/GentiumBookBasic-Regular.woff) format("woff");
+  src: url("./fonts/RobotoMono-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-style: light;
+  font-weight: 300;
+  src: url("./fonts/RobotoMono-Light.ttf") format("ttf");
 }
 html {
   font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: var(--color-white);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  cursor: pointer;
+  border-bottom: none;
+  font-weight: 400;
+  padding: 0.5rem;
+  font-family: "RobotoMono";
+}
+a:hover {
+  color: #B27CF0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --color-purple: #B27CF0;
+  --color-black: #231E1A;
+  --color-yellow:#F7E864;
+  --color-white: #ffffff;
+  --color-blue:#12F4F8;
+  --color-grey: #E2E2E2;
+  --border-main: 2px solid #231E1A;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 700;
+  src: url(./fonts/Poppins-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Poppins-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-style: bold;
+  font-weight: 700;
+  src: url("./fonts/RobotoMono-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/RobotoMono-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-style: light;
+  font-weight: 300;
+  src: url("./fonts/RobotoMono-Light.ttf") format("ttf");
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: var(--color-white);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  cursor: pointer;
+  border-bottom: none;
+  font-weight: 400;
+  padding: 0.5rem;
+  font-family: "RobotoMono";
+}
+a:hover {
+  color: #B27CF0;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 3rem;
+  border-bottom: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_logo {
+  width: 15rem;
+  height: auto;
+}
+
+hr {
+  display: none;
+}
+
+svg.bi.bi-list {
+  display: none;
+}
+
+.divider {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(247, 232, 100)), to(rgb(0, 212, 255)));
+  background: linear-gradient(90deg, rgb(247, 232, 100) 0%, rgb(0, 212, 255) 100%);
+  height: 0.1rem;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+  svg.bi.bi-list {
+    display: block;
+    width: 5rem;
+    height: auto;
+    cursor: pointer;
+  }
+  svg.bi.bi-list:active {
+    fill: var(--color-purple);
+  }
+  div.menu ul {
+    list-style: none;
+    font-family: var("RobotoMono");
+    font-style: normal;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    position: absolute;
+  }
+  div.menu ul li a {
+    font-family: var("RobotoMono");
+    font-style: normal;
+  }
+  .divider {
+    margin: 0 15;
+  }
 }

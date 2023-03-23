@@ -1,3 +1,8 @@
+*{
+    box-sizing:border-box;
+}
+
+
 :root{
 --color-purple: #B27CF0;
 --color-black: #231E1A;
@@ -6,18 +11,68 @@
 --color-blue:#12F4F8;
 --color-grey: #E2E2E2;
 --border-main: 2px solid #231E1A;
---divider: 2px solid linear-gradient(45deg, #12F4F8, #F7E864);
 }
 
 @font-face {
-    font-family: "GentiumBookBasic";
-    font-style: normal;
-    font-weight: 400;
-    src: url(fonts/GentiumBookBasic-Regular.woff) format('woff');
+    font-family: "Poppins";
+    font-style: bold;
+    font-weight: 700;
+    src: url(./fonts/Poppins-Bold.ttf) format('ttf');
 }
 
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight:600;
+    src: url('./fonts/Poppins-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: bold;
+    font-weight:700;
+    src: url('./fonts/RobotoMono-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: normal;
+    font-weight:400;
+    src: url('./fonts/RobotoMono-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    font-style: light;
+    font-weight:300;
+    src: url('./fonts/RobotoMono-Light.ttf') format('ttf');
+}
 
 
 html {
     font-size: 62.5%;
+    font-family: 'Poppins';
 }
+
+body{
+    background-color: var(--color-white);
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+    cursor: pointer;
+    border-bottom:none;
+    font-weight: 400;
+    padding: 0.5rem;
+    font-family: 'RobotoMono';
+
+        &:hover{
+            color: #B27CF0;
+        }
+}
+
+
