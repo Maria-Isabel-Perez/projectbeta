@@ -27,12 +27,21 @@ svg.bi.bi-list {
 }
 
 
-div.menu {
+nav ul li{
 
-    display: inline;
-    font-size: 1.2rem;
-
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: row;
 }
+
+#menu-menu-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 
 /*MOBILE*/
 
@@ -52,7 +61,7 @@ svg.bi.bi-list {
 }
 
 
-div.menu ul li{
+nav ul li{
     list-style: none;
     font-family: var('RobotoMono');
     font-style: normal;

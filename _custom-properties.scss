@@ -1,5 +1,6 @@
 *{
     box-sizing:border-box;
+    margin: 0;
 }
 
 
@@ -22,11 +23,6 @@ html,body {
     margin: 0;
     padding: 2rem;
     color: var(--color-black);
-}
-
-body{
-    background-color: var(--color-white);
-    margin: 0;
     overflow-x: hidden;
 }
 
@@ -42,9 +38,18 @@ a {
         &:hover{
             color: #B27CF0;
             text-decoration: underline;
-            
         }
+
+            
 }
+
+a:active{
+    background-color: #231E1A;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    }
 
 footer{
     margin-bottom: 0;

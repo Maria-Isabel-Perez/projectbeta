@@ -4,18 +4,6 @@ footer{
 }
 
 
-main{
-    margin-bottom: 0;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    bottom: 0;
-}
-
 .footer__logo{
     width: 15rem;   
     height: auto; 
@@ -24,7 +12,7 @@ main{
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #contact__text{
@@ -37,11 +25,6 @@ p{
     font-weight: 400;
 }
 
-.legal{
-    color: var(--color-black);
-    margin-right: 5rem;
-    
-}
 
 .divider-footer{
     background: linear-gradient(90deg, rgba(247,232,100,1) 0%, rgba(0,212,255,1) 100%);
@@ -51,6 +34,33 @@ p{
 
 }
 
+
+
+.legal{
+margin: 0;
+text-align: center;
+}
+
+
+main{
+    margin-bottom: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+}
+
+#footer-info{
+
+display: flex;
+flex-direction: column;
+gap: 2rem;
+
+}
 @media screen and (min-width: 700px){
 
     main{
@@ -61,4 +71,29 @@ p{
     }
 
 
+    .legal{
+        color: var(--color-black);
+        margin-right: 5rem;
+        
+    }
+
 }
+
+
+@media screen and (max-width: 700px) {
+
+footer{
+        margin-bottom: 0;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        bottom: 0;
+    }
+
+
+}
+
