@@ -1,6 +1,6 @@
-<footer>
-
 <div class="divider"></div>
+
+<footer>
 
 <main>
 

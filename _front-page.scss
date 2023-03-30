@@ -9,6 +9,11 @@
     gap: 2rem;
 }
 
+.claim{
+    margin-top: 6rem;
+    padding: 2rem;
+}
+
 .icono-carita-feliz{
     width: 5rem;
     height: auto;
@@ -47,6 +52,9 @@ h1{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 1.6rem;
+    filter: drop-shadow(3px 4px 0px #CDCDCD);
+    transition: .2s ease;
+    
 
     &:hover{
         background-color: var(--color-purple);
@@ -92,21 +100,53 @@ h1{
 .claim__dos {
 
     width: 100%;
-    height: auto;
+    height: 100%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 2rem;
+    margin-top: 8rem;
+    padding: 2rem;
 
+    &{
+            background: linear-gradient(240deg, #ffffff, #f7e864, #12f4f8, #ffffff);
+            background-size: 800% 800%;
+        
+            -webkit-animation: AnimationName 34s ease infinite;
+            -moz-animation: AnimationName 34s ease infinite;
+            animation: AnimationName 34s ease infinite;
+        }
+        
+        @-webkit-keyframes AnimationName {
+            0%{background-position:7% 0%}
+            50%{background-position:94% 100%}
+            100%{background-position:7% 0%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:7% 0%}
+            50%{background-position:94% 100%}
+            100%{background-position:7% 0%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:7% 0%}
+            50%{background-position:94% 100%}
+            100%{background-position:7% 0%}
+        
+    }
 
+}
+
+.claim__dos img{
+    width: 3rem;
+    height: auto;
 }
 
 h2{
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #subrayado-amarillo {
@@ -114,10 +154,70 @@ h2{
 }
 
 .claim__dos p {
-    font-family: 'RobotoMono';
-    
+    font-family: 'Roboto Mono';
+    font-size: 2.5rem;
+
 }
 
+#marcaimpactante {
+    color: white;
+    font-weight: 400;
+   
+    &:hover{
+        font-style: italic;
+    }
+}
+
+.cta {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin:10rem 0;
+    padding: 2rem;
+    
+
+    & p{
+        font-family: 'Roboto Mono';
+        font-size: 2rem;
+    }
+}
+
+
+.cta__dos{
+    padding: 2rem;
+    margin:6rem 0;
+    display: none;
+}
+
+.cta__dos img {
+    width: 2.5rem;
+    height: auto;
+    margin: 4rem 0;
+}
+
+.cta__dos p{
+    font-size:1.8rem;
+    text-transform: uppercase;
+}
+
+.calendly{
+    font-size: 1.8rem;
+    color: var(--color-black);
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 0 20rem;
+    
+    
+    &:hover{
+        font-style: italic;
+        color: var(--color-black)
+    }
+}
 
 @media screen and (max-width: 600px) {
 
@@ -129,5 +229,57 @@ h2{
         display: none;
     }
 
+    .info-claim {
+        color: white;
+        width: 100%;
+    }
+
+    .cta__dos img {
+        width: 2.5rem;
+        height: auto;
+        margin: 4rem 0;
+    }
+
+    .galeria__fotos img{
+        width: 30rem;
+        height: auto;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        
+    
+        &:hover{
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+    }
+
+
+    .galeria {
+        width: 100%;
+        height: auto;
+        margin: 8rem 0;
+        
+        
+    
+        &__fotos{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+        }
+    }
+
+
+
+    .calendly {
+        padding: 0;
+    }
 
 }
