@@ -1,0 +1,236 @@
+.content {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    gap: 5rem;
+    margin: 4rem 0;
+    align-items: center;
+}
+
+.texto-about {
+    font-size:2rem;
+}
+
+#link-about{
+    text-decoration: underline;
+}
+
+.servicios {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 4rem 0;
+}
+
+h3{
+    background-color: var(--color-yellow);
+    width: fit-content;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.texto-servicios{
+    margin-top:4rem;
+    font-family: 'Roboto Mono';
+    font-size: 2rem;
+}
+
+.servicios__dos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+
+}
+
+.pack {
+    border: 2px solid var(--color-black);
+    border-radius: 10px;
+    width: fit-content;
+    height: auto;
+    background-color: white;
+    
+    
+    & p {
+        padding: 0.5rem 2rem;
+    }
+}
+
+.pro{
+    filter: drop-shadow(3px 4px 0px var(--color-blue));
+}
+
+.starter{
+    filter: drop-shadow(3px 4px 0px var(--color-yellow));
+}
+
+.expert{
+    filter: drop-shadow(3px 4px 0px var(--color-purple));
+}
+
+
+#titulo-pack{
+    font-family: 'Roboto Mono';
+    text-decoration: underline;
+    color:var(--color-black);
+    font-size:2rem;
+}
+
+.pack p{
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+}
+
+.pack ul{
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+}
+
+#estrella{
+    width: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.calendly__dos{
+    font-size: 2rem;
+    padding: 4rem;
+    text-decoration: underline;
+
+    &:hover{
+        color:var(--color-black);
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+}
+
+.texto-calendly{
+    font-size: 2rem;
+    font-family: 'Roboto Mono';
+    padding: 0 6rem;
+    text-align: center;
+}
+
+
+.bloque-calendly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    height: 80%;
+
+        &{
+           
+                background: linear-gradient(240deg, #B27CF0, #12f4f8);
+                background-size: 800% 800%;
+            
+                -webkit-animation: AnimationName 34s ease infinite;
+                -moz-animation: AnimationName 34s ease infinite;
+                animation: AnimationName 34s ease infinite;
+            }
+            
+            @-webkit-keyframes AnimationName {
+                0%{background-position:7% 0%}
+                50%{background-position:94% 100%}
+                100%{background-position:7% 0%}
+            }
+            @-moz-keyframes AnimationName {
+                0%{background-position:7% 0%}
+                50%{background-position:94% 100%}
+                100%{background-position:7% 0%}
+            }
+            @keyframes AnimationName {
+                0%{background-position:7% 0%}
+                50%{background-position:94% 100%}
+                100%{background-position:7% 0%}
+            
+        
+        }
+}
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 600px) {
+
+.content {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 4rem 0;
+}
+
+.texto-about {
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+.servicios__dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+
+}
+
+.pack,p,ul{
+    padding: 2rem;
+}
+
+
+
+}
+
+
+
+/*TABLET*/
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+    .content {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+       
+    }
+    
+    .texto-about {
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    
+    .servicios__dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0 2rem;
+    
+    }
+    
+    .pack,p,ul{
+        padding: 2rem;
+    }
+
+
+}
