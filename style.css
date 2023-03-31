@@ -795,6 +795,86 @@ h3 {
   }
 }
 
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin: 4rem 0;
+  gap: 4rem;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+.titulo-contacto {
+  margin-bottom: 2rem;
+  font-family: "Poppins";
+  font-size: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.contact-info-dos {
+  background-color: var(--color-grey);
+  padding: 2rem;
+}
+
+.link-calendly {
+  color: #B27CF0;
+  font-family: "Roboto Mono";
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.link-calendly:hover {
+  font-style: italic;
+}
+
+input {
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: 1.5px solid var(--color-black);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  font-family: "Roboto Mono";
+}
+input:focus {
+  border: none;
+  background-color: var(--color-black);
+  outline: none;
+  color: white;
+}
+
+#respuesta-form {
+  display: inline-block;
+}
+
 /*MOBILE*/
 @media screen and (max-width: 600px) {
   .content {
@@ -825,6 +905,26 @@ h3 {
   .pack, p, ul {
     padding: 2rem;
   }
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 4rem 0;
+    gap: 4rem;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
 }
 /*TABLET*/
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
@@ -854,5 +954,25 @@ h3 {
   }
   .pack, p, ul {
     padding: 2rem;
+  }
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 4rem 0;
+    gap: 4rem;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
   }
 }
